@@ -151,13 +151,12 @@ const CREDITOS_GRUPO = {
 };
 
 const URL_CASTELO_EXTERNO = 'https://images.unsplash.com/photo-1548783307-f63adc3f200b?auto=format&fit=crop&w=1200&q=85';
-
 let FONTE_IMAGEM_FUNDO = { uri: URL_CASTELO_EXTERNO };
 try {
-  FONTE_IMAGEM_FUNDO = require('./assets/castelo.jpg');
+  FONTE_IMAGEM_FUNDO = require('./assets/castelo.jpge');
 } catch (e) {
   try {
-    FONTE_IMAGEM_FUNDO = require('./castelo.jpg');
+    FONTE_IMAGEM_FUNDO = require('./castelo.jpge');
   } catch (err) {
     FONTE_IMAGEM_FUNDO = { uri: URL_CASTELO_EXTERNO };
   }
